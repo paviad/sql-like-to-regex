@@ -2,17 +2,17 @@
 
 namespace SqlLikeToRegex;
 
-public abstract class Token {
-    protected string Value { get; }
-
+internal abstract class Token {
     protected Token(string value) {
         Value = value;
     }
 
+    protected string Value { get; }
+
     public abstract string Convert();
 }
 
-public class WildcardToken : Token {
+internal class WildcardToken : Token {
     public WildcardToken(string value) : base(value) { }
 
     public override string Convert() {
@@ -20,7 +20,7 @@ public class WildcardToken : Token {
     }
 }
 
-public class WildcharToken : Token {
+internal class WildcharToken : Token {
     public WildcharToken(string value) : base(value) { }
 
     public override string Convert() {
@@ -28,7 +28,7 @@ public class WildcharToken : Token {
     }
 }
 
-public class StringToken : Token {
+internal class StringToken : Token {
     public StringToken(string value) : base(value) { }
 
     public override string Convert() {
@@ -36,7 +36,7 @@ public class StringToken : Token {
     }
 }
 
-public class SetToken : Token {
+internal class SetToken : Token {
     public SetToken(string value) : base(value) { }
 
     public override string Convert() {

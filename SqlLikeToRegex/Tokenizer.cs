@@ -2,7 +2,7 @@
 
 namespace SqlLikeToRegex;
 
-public class Tokenizer {
+internal class Tokenizer {
     private readonly List<TokenDescriptor> _patterns = new();
 
     public Tokenizer Add(string regex, Func<string, Token> creator) {
