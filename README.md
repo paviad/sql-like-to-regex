@@ -17,7 +17,3 @@ Call the static method `SqlLikeTranspiler.ToRegEx` to convert an `SQL` `LIKE` ex
 `var result = SqlLikeTranspiler.ToRegEx("%abc[%]%")`
 
 The expected result is `^.*abc[%].*$`
-
-## Source
-
-The source for this library is on GitHub at https://github.com/paviad/sql-like-to-regex
