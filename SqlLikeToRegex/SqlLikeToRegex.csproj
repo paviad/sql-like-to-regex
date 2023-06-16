@@ -9,11 +9,17 @@
     <Authors>aviad</Authors>
     <Description>A small library that converts SQL LIKE expressions to regular expressions</Description>
     <Copyright>MIT License - copyright (c) 2023 Aviad Pineles</Copyright>
-    <PackageId>sql-like-to-regex</PackageId>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Update="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
